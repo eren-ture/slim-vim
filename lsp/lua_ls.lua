@@ -82,4 +82,18 @@ return {
     'selene.yml',
     '.git',
   },
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" }, -- suppress "undefined global vim"
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false, -- stop prompts about third party libs
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
 }

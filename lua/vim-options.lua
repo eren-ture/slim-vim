@@ -19,6 +19,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
         vim.hl.on_yank()
     end,
 })
-
--- Enable inline virtual text
-vim.diagnostic.config({ virtual_text = true })
