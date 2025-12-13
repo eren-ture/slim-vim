@@ -21,6 +21,11 @@ return {
         },
         lazy = false,
         config = function()
+            require("neo-tree").setup({
+                filesystem = {
+                    group_empty_dirs = true,
+                },
+            })
             vim.keymap.set('n', '<leader>e', ":Neotree filesystem reveal left<CR>", {})
         end
     },
