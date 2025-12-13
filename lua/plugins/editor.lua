@@ -87,5 +87,12 @@ return {
                 desc = "Buffer Local Keymaps (which-key)",
             },
         },
-    }
+    },
+
+    -- Markdown Preview
+    {
+        "OXY2DEV/markview.nvim",
+        lazy = false,
+    },
 }
+
