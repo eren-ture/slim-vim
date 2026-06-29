@@ -49,6 +49,7 @@ return {
                 filetypes = { "json", "yaml", "yml" },
             },
             pyright = {},
+            marksman = {},
         }
 
         mason.setup()
@@ -61,6 +62,7 @@ return {
                 "jdtls",
                 "ts_ls",
                 "pyright",
+                "marksman",
             }
         )
         mason_tool_installer.setup({
